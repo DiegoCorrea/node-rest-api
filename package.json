@@ -1,0 +1,26 @@
+{
+  "name": "node-rest-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "mongo": "~2.0",
+    "mongoose": "^4.11.0",
+    "morgan": "~1.8.1",
+    "nodemon": "^1.11.0",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "~2.4.2"
+  },
+  "author": "Diego Corrêa",
+  "description": "Uma API sobre os deuses",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/DiegoCorrea/node-rest-api.git"
+  }
+}
