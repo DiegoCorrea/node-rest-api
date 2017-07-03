@@ -1,10 +1,10 @@
 var express = require('express');
-Greek = require('./../../models/greek');
+Greek = require('./../../models/greek_gods');
 var router = express.Router();
 
 /* GET gods listing. */
 router.get('/', function(req, res, next) {
-  Greek.getAll(function(err, gods){
+  Greek.getGods(function(err, gods){
     if(err){
       throw err;
     }

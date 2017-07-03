@@ -1,0 +1,19 @@
+{
+    "name": "Gaia",
+    "roman_name" : "Terra",
+    "description": "é a Mãe-Terra, como elemento primordial e latente de uma potencialidade geradora incrível"
+},
+{
+    "name": "Urano",
+    "roman_name" : "Céu",
+    "description": "A divindade que personificava o céu"
+},
+{
+    "name": "Crono",
+    "roman_name" : "Saturno",
+    "description": "Cronos era o rei dos titãs e o grande deus do tempo, sobretudo quando este é visto em seu aspecto destrutivo, o tempo inexpugnável que rege os destinos e a tudo devora."
+},
+{
+    "name": "Oceano",
+    "description": "Era o deus das águas correntes, do fluxo e do refluxo e a origem de todas as massas líquidas e fontes de água doce do mundo.",
+}

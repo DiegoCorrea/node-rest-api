@@ -1,5 +1,5 @@
 var express = require('express');
-NordicGod = require('./../../models/nordic_gods');
+NordicGod = require('./../../../models/nordic_gods');
 var router = express.Router();
 
 /* GET gods listing. */

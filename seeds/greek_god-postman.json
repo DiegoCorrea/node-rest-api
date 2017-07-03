@@ -1,0 +1,30 @@
+{
+    "name": "Hera",
+    "roman_name" : "Juno",
+    "description": "Rainha dos céus e dos deuses Deusa do matrimônio, das esposas e dos partos",
+    "home_address": "Monte Olimpo"
+},
+{
+    "name": "Posídon",
+    "roman_name" : "Netuno",
+    "description": "Deus do mar, dos terremotos e dos cavalos",
+    "home_address": "Monte Olimpo"
+},
+{
+    "name": "Zeus",
+    "roman_name" : "Júpiter",
+    "description": "Rei dos Deuses Deus do Céu, Trovão e Relâmpago Deus da Lei, Ordem e Justiça",
+    "home_address": "Monte Olimpo"
+},
+{
+    "name": "Atena",
+    "roman_name" : "Minerva",
+    "description": "Deusa das estratégias de batalha, civilização, sabedoria, artes, justiça, habilidade, inspiração, força e matemática",
+    "home_address": "Monte Olimpo"
+},
+{
+    "name": "Hades",
+    "roman_name" : "Plutão",
+    "description": "Deus do Submundo, Rei dos mortos",
+    "home_address": "Mundo inferior"
+}

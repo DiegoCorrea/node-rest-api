@@ -6,14 +6,20 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var index = require('./routes/index');
-var nordics = require('./routes/v1/nordics');
-var greeks = require('./routes/v1/greeks');
-
 mongoose.connect('mongodb://localhost/gods');
 var db = mongoose.connection;
 
 var app = express();
+
+var index = require('./routes/index');
+
+var nordic_gods_v1 = require('./routes/v1/nordics');
+var greek_gods_v1 = require('./routes/v1/greeks');
+
+var nordic_gods_v2 = require('./routes/v2/nordics/gods');
+var nordic_golens_v2 = require('./routes/v2/nordics/golens');
+var greek_gods_v2 = require('./routes/v2/greeks/gods');
+var greek_titans_v2 = require('./routes/v2/greeks/titans');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,8 +34,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/v1/nordics', nordics);
-app.use('/v1/greeks', greeks);
+app.use('/v1/nordics', nordic_gods_v1);
+app.use('/v1/greeks', greek_gods_v1);
+
+app.use('/v2/nordics/gods', nordic_gods_v2);
+app.use('/v2/greeks/gods', greek_gods_v2);
+app.use('/v2/nordics/golens', nordic_golens_v2);
+app.use('/v2/greeks/titans', greek_titans_v2);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,52 +1,52 @@
 var express = require('express');
-NordicGod = require('./../../models/nordic_gods');
+NordicGolem = require('./../../../models/nordic_golens');
 var router = express.Router();
 
-/* GET gods listing. */
+/* GET golens listing. */
 router.get('/', function(req, res, next) {
-  NordicGod.getGods(function(err, gods){
+  NordicGolem.getGolens(function(err, golens){
     if(err){
       throw err;
     }
-      res.json(gods);
+      res.json(golens);
   });
 });
 
 router.get('/:_id', function(req, res, next) {
-  NordicGod.getGodById(req.params._id,function(err, god){
+  NordicGolem.getGodById(req.params._id,function(err, golem){
     if(err){
       throw err;
     }
-      res.json(god);
+      res.json(golem);
   });
 });
 router.post('/', function(req, res, next) {
-  var god = req.body;
-  NordicGod.addGod(god,function(err, god){
+  var golem = req.body;
+  NordicGolem.addGolem(golem,function(err, golem){
     if(err){
       throw err;
     }
-      res.json(god);
+      res.json(golem);
   });
 });
 
 router.put('/:_id', function(req, res, next) {
   var id = req.params._id;
-  var god = req.body;
-  NordicGod.updateGod(id, god, {},function(err, god){
+  var golem = req.body;
+  NordicGolem.updateGolem(id, golem, {},function(err, golem){
     if(err){
       throw err;
     }
-      res.json(god);
+      res.json(golem);
   });
 });
 router.delete('/:_id', function(req, res, next) {
   var id = req.params._id;
-  NordicGod.deleteGod(id,function(err, god){
+  NordicGolem.deleteGolem(id,function(err, golem){
     if(err){
       throw err;
     }
-      res.json(god);
+      res.json(golem);
   });
 });
 module.exports = router;

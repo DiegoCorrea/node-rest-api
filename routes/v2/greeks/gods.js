@@ -1,10 +1,10 @@
 var express = require('express');
-NordicGod = require('./../../models/nordic_gods');
+GreekGod = require('./../../../models/greek_gods');
 var router = express.Router();
 
 /* GET gods listing. */
 router.get('/', function(req, res, next) {
-  NordicGod.getGods(function(err, gods){
+  GreekGod.getGods(function(err, gods){
     if(err){
       throw err;
     }
@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:_id', function(req, res, next) {
-  NordicGod.getGodById(req.params._id,function(err, god){
+  GreekGod.getGodById(req.params._id,function(err, god){
     if(err){
       throw err;
     }
@@ -22,7 +22,7 @@ router.get('/:_id', function(req, res, next) {
 });
 router.post('/', function(req, res, next) {
   var god = req.body;
-  NordicGod.addGod(god,function(err, god){
+  GreekGod.addGod(god,function(err, god){
     if(err){
       throw err;
     }
@@ -33,7 +33,7 @@ router.post('/', function(req, res, next) {
 router.put('/:_id', function(req, res, next) {
   var id = req.params._id;
   var god = req.body;
-  NordicGod.updateGod(id, god, {},function(err, god){
+  GreekGod.updateGod(id, god, {},function(err, god){
     if(err){
       throw err;
     }
@@ -42,7 +42,7 @@ router.put('/:_id', function(req, res, next) {
 });
 router.delete('/:_id', function(req, res, next) {
   var id = req.params._id;
-  NordicGod.deleteGod(id,function(err, god){
+  GreekGod.deleteGod(id,function(err, god){
     if(err){
       throw err;
     }

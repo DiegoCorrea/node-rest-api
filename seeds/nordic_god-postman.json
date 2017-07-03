@@ -1,0 +1,28 @@
+{
+    "name": "Odin",
+    "day_of_week" : "Quarta-feira",
+    "description": "deus da sabedoria, da guerra e da morte",
+    "home_address": "Asgard"
+},
+{
+    "name": "Thor",
+    "day_of_week" : "Quinta-feira",
+    "description": "deus do trovão, dos relâmpagos e da força",
+    "home_address": "Asgard"
+},
+{
+    "name": "Frigga",
+    "description": "deusa mãe, deusa do amor e da fertilidade",
+    "home_address": "Asgard"
+},
+{
+    "name": "Balder",
+    "description": "deus da justiça e sabedoria",
+    "home_address": "Asgard"
+},
+{
+    "name": "Freya",
+    "day_of_week" : "Sexta-feira",
+    "description": "deusa do amor, da fertilidade, beleza, riqueza, magia, guerra e morte",
+    "home_address": "Asgard"
+}

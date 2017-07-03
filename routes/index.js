@@ -7,9 +7,14 @@ router.get('/', function(req, res, next) {
     title: 'Coleção dos Deuses', 
     description: 'REST API dedicada a pesquisa de deuses', 
     resources_v1: {
-      nordics: '/v1/nordics',
-      yorubas: '/v1/iorubas',
-      greeks: '/v1/greeks'
+      nordic_gods: '/v1/nordics',
+      greeks_gods: '/v1/greeks'
+    },
+    resources_v2: {
+      nordic_gods: '/v2/nordics/gods',
+      nordic_golens: '/v2/nordics/golens',
+      greeks_gods: '/v2/greeks/gods',
+      greeks_titans: '/v2/greeks/titans',
     } 
   });
 });
